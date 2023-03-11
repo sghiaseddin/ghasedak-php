@@ -169,7 +169,7 @@ class GhasedakApi
         if (is_array($receptor)) {
             $receptor = implode(",", $receptor);
         }
-        $path = 'verification/send/simple';
+        $path = 'verification/send/verify';
         $params = array(
             "receptor" => $receptor,
             "type" => $this->verify_type,
